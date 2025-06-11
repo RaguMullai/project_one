@@ -1,3 +1,4 @@
+/* universal sector */
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +9,7 @@
     scroll-behavior: smooth;
     font-family: "poppins", sans-serif;
 }
+/* root element color */
 :root{
   --bg-color:#080808;
   --second-bg-color:#131313;
@@ -18,10 +20,12 @@ html{
     font-size: 60%;
     overflow-x: hidden;
 }
+/* body section */
 body{
     background: var(--bg-color) ;
     color: var(--text-color);
 }
+/* header edit */
 .header{
     position: fixed;
     top: 0;
@@ -35,6 +39,7 @@ body{
     align-items: center;
     z-index: 5;
 }
+/* logo edit */
 .logo{
 font-size: 3rem;
 color: var(--text-color);
@@ -49,6 +54,7 @@ transition: 0.3s ease;
     text-shadow: 0 0 25px var(--main-color) ;
 
 }
+/* navbar section */
 .navbar a{
     font-size: 1.8rem;
     color: var(--text-color);
@@ -70,6 +76,7 @@ text-decoration: none;
     font-size: 5vh;
    padding-right: 3%;
 }
+/* home section */
 section{
     min-height: 100vh;
     padding: 10rem 12% 10rem;
@@ -105,6 +112,7 @@ span{
     margin-top: 1.5rem;
     line-height: 1;
 }
+/* home img */
 .home-img{
     border-radius: 50%;
 }
@@ -129,6 +137,7 @@ span{
     max-width: 1000px;
 
 }
+/* navbar icon */
 .social-icons a{
     display: inline-flex;
     justify-content: center;
@@ -149,6 +158,7 @@ span{
     box-shadow: 0 0 25px var(--main-color);
     background-color: var(--main-color);
 }
+/* button home */
 .btn{
     display: inline-block;
     padding: 1rem 2.8rem;
@@ -184,6 +194,7 @@ span{
     color: black;
 
 }
+/* animation section */
 .text-animation{
     font-size: 34px;
     font-weight: 600;
@@ -266,6 +277,7 @@ span{
     margin: 5rem 0;
     
 }
+/* education page */
 .education{
 padding:100px 15px;
 background: var(--second-bg-color);
@@ -356,6 +368,7 @@ left: calc(50% - 1px);
     background-color: var(--bg-color);
     width:50px;
 }
+/* service section */
 .service{
     background-color: var(--bg-color);
     color:black;
@@ -406,6 +419,7 @@ left: calc(50% - 1px);
     line-height: 1.7;
     margin: auto;
 }
+/* testimonials section */
 .testimonials{
     background: var(--second-bg-color);
 }
@@ -465,41 +479,90 @@ left: calc(50% - 1px);
     color: gold;
     font-size: 2rem;
 }
-.contact {
-    background-color: var(--bg-color);
+/* Base styling for contact form */
+#contact {
+  padding: 50px 20px;
+  background: #3a3737;
 }
-.contact h2{
-    margin-bottom: 3rem;
-    color: white;
+
+#contact .heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color:var(--main-color);
 }
-.contact form{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    margin: 5rem auto;
-    text-align: center;
+
+form {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #1d2022;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
-.contact form .input-box{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-.contact form .input-box input,
-.contact form textarea{
-    width:100%;
-    padding: 2.4rem;
-    font-size: 2rem;
-    color: var(--text-color);
-    background: var(--second-bg-color);
-    border-radius: 2rem;
-    border: 2px solid var(--main-color);
-    margin: 1.5rem 0;
-    resize: none;
+
+.input-box {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
 }
-.contact form .btn{
-    margin-top: 2rem;
+
+.input-box input,
+textarea {
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
 }
+
+.input-box input:focus,
+textarea:focus {
+  border-color: #4fb1df;
+  outline: none;
+}
+
+/* For the textarea block */
+.input-group-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group-2 textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Submit button styling */
+form .btn {
+  padding: 12px 25px;
+  background-color:var(--main-color);
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background-color 0.3s ease;
+}
+
+form .btn:hover {
+  background-color: #00070e;
+}
+
+/* input edit section */
+input.invalid,
+textarea.invalid {
+  border-color: red;
+}
+
 .footer{
     position: relative;
     bottom: 0;
@@ -575,6 +638,7 @@ left: calc(50% - 1px);
     border-bottom: 2px solid var(--main-color);
     display: none;
 }
+/* addition edit section */
 .navbar.active{
     display: block;
 }
